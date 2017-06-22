@@ -1,0 +1,69 @@
+﻿@model Models.Actualite
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="divTitrePage row">
+    <img src="@Url.Content(Commons.Const.CheminMiniBandeau_violet)" class="minibandeau_violet" />
+    <h1>@Model.TitreIHM</h1>
+</div>
+
+<div class="container-fluid" style="margin-left:15px;width:98%">
+	<div class="col-xs-12 ResumeActualite" style="margin-top:15px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@ASCentreParis.Helpers.HtmlHelper.HTMLRaw("Resume",@Model.Resume,null,true)
+	</div>
+	<div>
+	@if(!String.IsNullOrEmpty(@Model.CheminDocument))
+	         {
+		  <div  class="col-xs-12"  align="center" style="margin-top:20px;">
+		  	@if(@Model.isImage.Value)
+				{
+				<img align="center"  alt="" class="image-Modal-actualite img-responsive img-rounded" src="@Url.Content(@Model.CheminDocument)" title="@Model.Titre">
+				}
+			else
+				{
+                <video id="video_@Model.Id" class="video-js video-Modal-actualite videoToLoad myinnercontainer" controls preload="auto"
+                       data-setup="{}">
+                    <source src="@Url.Content(Model.CheminDocument)">
+
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+                }			
+		   </div>
+	         }
+	</div>
+	<div class="col-xs-12" style="margin-top:23px;margin-bottom:20px;">
+	      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@ASCentreParis.Helpers.HtmlHelper.HTMLRaw("Texte",Model.Texte)</p>
+	 </div>
+
+    <div align="center" style="margin-top:30px;" class="col-xs-12">
+        <div class="col-xs-6"  align="right"  style="padding-right:19px;">
+            <button type="button" class="btn btn-default" onclick="location.href='@Url.Action("Index", "Home")';return false;">Retour</button>
+        </div>
+        <div class="col-xs-6"  align="left"  style="padding-left:19px;">
+            <span title="Commentaires" >
+                <input id="linkShowCommentaires_@Model.Id" onclick="afficherCommentaires(@Model.Id,false)" class="linkButton" value="@Model.ListeCommentaires.Count commentaire(s)" alt="Commentaire(s)" title="Commentaire(s)" />
+                <input id="linkHideCommentaires_@Model.Id" onclick="masquerCommentaires(@Model.Id,false)" style="display:none;" class="linkButton" value="Masquer" alt="Commentaire(s)" title="Masquer le(s) commentaire(s)" />
+            </span>
+        </div>
+    </div>
+	<div id="divPartialListCommentaires_@Model.Id" class="col-xs-12 noMarginPaddingVertical">
+		@Html.Partial("~/Views/Commentaire/Commentaires.cshtml",@Model)
+	</div>
+</div>
+
+<script> 
+    $(document).ready(function() {
+	    // MAJ des  commentaires
+	    setUtilisateurName();
+    });
+</script>
+
+
+
+<script src="@Url.Content("~/Scripts/Commentaires.js")"></script>

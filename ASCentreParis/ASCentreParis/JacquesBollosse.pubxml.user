@@ -4912,7 +4912,7 @@ en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, consultez la p
       <publishTime>03/01/2017 23:07:06</publishTime>
     </File>
     <File Include="Ressources/css/Ajout.css">
-      <publishTime>06/07/2017 16:33:40</publishTime>
+      <publishTime>06/23/2017 10:25:10</publishTime>
     </File>
     <File Include="Ressources/css/bdf.charte.css">
       <publishTime>02/16/2017 18:50:36</publishTime>
@@ -5191,7 +5191,7 @@ en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, consultez la p
       <publishTime>05/12/2017 11:59:00</publishTime>
     </File>
     <File Include="Scripts/Commons.js">
-      <publishTime>06/21/2017 13:06:29</publishTime>
+      <publishTime>06/23/2017 11:01:37</publishTime>
     </File>
     <File Include="Scripts/CommonsForm.js">
       <publishTime>06/22/2017 15:41:33</publishTime>
@@ -5224,7 +5224,7 @@ en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, consultez la p
       <publishTime>05/12/2017 10:58:16</publishTime>
     </File>
     <File Include="Views/Actualite/AfficherActualite.cshtml">
-      <publishTime>06/22/2017 16:03:51</publishTime>
+      <publishTime>06/23/2017 10:46:35</publishTime>
     </File>
     <File Include="Views/Administration/Actualites.cshtml">
       <publishTime>06/21/2017 13:07:17</publishTime>
@@ -5257,16 +5257,16 @@ en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, consultez la p
       <publishTime>05/03/2017 18:07:28</publishTime>
     </File>
     <File Include="Views/Club/ASCMarcory.cshtml">
-      <publishTime>04/30/2017 21:50:28</publishTime>
+      <publishTime>06/23/2017 10:44:24</publishTime>
     </File>
     <File Include="Views/Club/Histoire.cshtml">
-      <publishTime>04/29/2017 21:07:14</publishTime>
+      <publishTime>06/23/2017 10:45:26</publishTime>
     </File>
     <File Include="Views/Club/Partenaires.cshtml">
-      <publishTime>05/14/2017 18:42:08</publishTime>
+      <publishTime>06/23/2017 10:45:00</publishTime>
     </File>
     <File Include="Views/Club/PartenariatPSG.cshtml">
-      <publishTime>04/29/2017 21:10:18</publishTime>
+      <publishTime>06/23/2017 10:44:42</publishTime>
     </File>
     <File Include="Views/Commentaire/Commentaires.cshtml">
       <publishTime>05/02/2017 18:03:04</publishTime>
@@ -5278,7 +5278,7 @@ en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, consultez la p
       <publishTime>04/30/2017 14:42:50</publishTime>
     </File>
     <File Include="Views/Contact/Contacts.cshtml">
-      <publishTime>06/07/2017 15:49:23</publishTime>
+      <publishTime>06/23/2017 10:29:16</publishTime>
     </File>
     <File Include="Views/Document/DisplayDocument.cshtml">
       <publishTime>06/07/2017 16:12:29</publishTime>
@@ -5293,10 +5293,10 @@ en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, consultez la p
       <publishTime>05/15/2017 08:46:52</publishTime>
     </File>
     <File Include="Views/Document/ListeDocumentsMobile.cshtml">
-      <publishTime>06/07/2017 15:32:01</publishTime>
+      <publishTime>06/07/2017 15:53:38</publishTime>
     </File>
     <File Include="Views/Equipe/Equipe.cshtml">
-      <publishTime>05/13/2017 22:47:44</publishTime>
+      <publishTime>06/23/2017 10:31:01</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>05/29/2017 12:01:20</publishTime>
@@ -5314,7 +5314,7 @@ en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, consultez la p
       <publishTime>05/04/2017 18:57:58</publishTime>
     </File>
     <File Include="Views/Shared/Banner.cshtml">
-      <publishTime>05/12/2017 12:22:52</publishTime>
+      <publishTime>06/23/2017 10:58:33</publishTime>
     </File>
     <File Include="Views/Shared/DisplayTemplates/BootstrapMenuHelperModel.cshtml">
       <publishTime>05/13/2017 23:02:08</publishTime>
@@ -5377,7 +5377,7 @@ en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, consultez la p
       <publishTime>02/16/2017 11:30:40</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/29/2017 11:55:01</publishTime>
+      <publishTime>05/29/2017 11:55:02</publishTime>
     </File>
   </ItemGroup>
 </Project>

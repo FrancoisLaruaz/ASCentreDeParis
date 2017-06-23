@@ -1,4 +1,4 @@
-﻿@model Models.Actualite
+@model Models.Actualite
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -10,7 +10,7 @@
     <h1>@Model.TitreIHM</h1>
 </div>
 
-<div class="container-fluid" style="margin-left:15px;width:98%">
+<div class="container-fluid noMarginPaddingHorizontal" >
 	<div class="col-xs-12 ResumeActualite" style="margin-top:15px;">
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@ASCentreParis.Helpers.HtmlHelper.HTMLRaw("Resume",@Model.Resume,null,true)
 	</div>
@@ -21,9 +21,9 @@
 		  	@if(@Model.isImage.Value)
 				{
 				<img align="center"  alt="" class="image-Modal-actualite img-responsive img-rounded" src="@Url.Content(@Model.CheminDocument)" title="@Model.Titre">
-				}
-			else
-				{
+            }
+            else
+            {
                 <video id="video_@Model.Id" class="video-js video-Modal-actualite videoToLoad myinnercontainer" controls preload="auto"
                        data-setup="{}">
                     <source src="@Url.Content(Model.CheminDocument)">
@@ -33,7 +33,8 @@
                         <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
                     </p>
                 </video>
-                }			
+
+            }			
 		   </div>
 	         }
 	</div>

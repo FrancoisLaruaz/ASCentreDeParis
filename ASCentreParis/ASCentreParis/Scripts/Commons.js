@@ -265,19 +265,24 @@ function  adaptScreen()
     {
         $('#divLogoMobile').show();
         $('#titreSite').css('text-align','center');
-        $('#titreSite').css('font-size','34px');
+        $('#titreSite').css('font-size','22px');
+        $('#titreSite').css('vertical-align','text-top');
         $('.showBigScreen').hide();
+        $('#bdflogo').css('max-height','85px');
+        $('#divTitreSite').removeClass('col-xs-8').addClass('col-xs-9');
+        $('#divLogo').removeClass('col-xs-2').addClass('col-xs-3');
     }
     else
     {
         $('#divLogoMobile').hide();
-        $('#titreSite').css('text-align','left');
+        $('#titreSite').css('text-align','center');
         $('#titreSite').css('font-size','38px');
         $('.showBigScreen').show();
-
+        $('#bdflogo').css('max-height','150px');
+        $('#divTitreSite').removeClass('col-xs-9').addClass('col-xs-8');
+        $('#divLogo').removeClass('col-xs-3').addClass('col-xs-2');
     }
 
 
-    
-
+   
 }

@@ -1,4 +1,4 @@
-﻿.modal {
+.modal {
             display:    none;
             position:   fixed;
             z-index:    1000;
@@ -368,8 +368,8 @@ label {
 
 .DivInfoEquipe
     {
-   padding-left:15px;
-   padding-right:15px;
+   padding-left:30px !important;
+   padding-right:30px !important;
     margin-top: 20px;
     }
 
@@ -444,6 +444,10 @@ label {
         margin-right:0px;
     }
 
+    .divTitrePage {
+        padding-top: 15px;
+    }
+
      h3 {
         color:#9370DB;
         font-size:19px;
@@ -460,6 +464,11 @@ label {
         }
 
     .styleContainerLayout {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .styleContainerHeader {
         width: 100%;
         padding-left: 15px;
         padding-right: 15px;
@@ -494,7 +503,7 @@ label {
 
 .menuBarPadding
     {
-        padding-left:5px !important;
+        padding-left:10px !important;
     }
 
 
@@ -518,13 +527,25 @@ label {
         height:300px;
      }
 
+
+    .divTitrePage {
+        padding-top: 15px;
+        padding-left: 30px !important;
+    }
+
+    .styleContainerHeader {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .divGallery{
          padding:26px;
     }
 
     .menuBarPadding
     {
-        padding-left:0px !important;
+        padding-left:30px !important;
     }
 
     .titreBanner {
@@ -651,10 +672,7 @@ label {
     padding-left:8px;
 }
 
-.divTitrePage
-{
-    padding-top:28px;
-}
+
 
 .video-Modal-actualite {
     width: 100%;

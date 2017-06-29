@@ -269,8 +269,7 @@ function  adaptScreen()
         $('#titreSite').css('vertical-align','text-top');
         $('.showBigScreen').hide();
         $('#bdflogo').css('max-height','85px');
-        $('#divTitreSite').removeClass('col-xs-8').addClass('col-xs-9');
-        $('#divLogo').removeClass('col-xs-2').addClass('col-xs-3');
+        $('#divTitreSite').removeClass('col-xs-7').addClass('col-xs-9');
     }
     else
     {
@@ -279,8 +278,7 @@ function  adaptScreen()
         $('#titreSite').css('font-size','38px');
         $('.showBigScreen').show();
         $('#bdflogo').css('max-height','150px');
-        $('#divTitreSite').removeClass('col-xs-9').addClass('col-xs-8');
-        $('#divLogo').removeClass('col-xs-3').addClass('col-xs-2');
+        $('#divTitreSite').removeClass('col-xs-9').addClass('col-xs-7');
     }
 
 

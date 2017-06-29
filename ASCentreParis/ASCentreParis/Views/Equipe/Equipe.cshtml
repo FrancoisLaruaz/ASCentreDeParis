@@ -1,4 +1,4 @@
-﻿﻿@model Models.Equipe
+@model Models.Equipe
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -11,7 +11,7 @@
 
 
 
-	<div class="DivInfoEquipe">
+	<div class="DivInfoEquipe row">
 		<span style="margin-top:40px;" class="CommentaireInfoEquipe">@ASCentreParis.Helpers.HtmlHelper.HTMLRaw("Commentaire",Model.Commentaire)</span>
 	</div>
 	@if(!String.IsNullOrEmpty(Model.InformationsDivision))

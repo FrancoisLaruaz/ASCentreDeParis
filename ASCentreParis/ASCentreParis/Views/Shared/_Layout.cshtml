@@ -1,4 +1,4 @@
-﻿@using MvcSiteMapProvider.Web.Html;
+@using MvcSiteMapProvider.Web.Html;
 @using System.Web.Optimization;
 @using System.Web.Optimization.Extensions;
 <!DOCTYPE html>
@@ -53,8 +53,8 @@
 
 </head>
 <body style="margin-top:-25px;width:100%;">
-    <div class="container-fluid styleContainerLayout" >
-        <div id="Header" class="noMarginPaddingVertical noMarginPaddingVertical">
+    <div class="container-fluid styleContainerHeader noMarginPaddingVertical" >
+        <div id="Header" class="noMarginPaddingVertical">
             @Html.Partial("Header")
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- PubleaderBoard -->
@@ -66,6 +66,8 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
+	</div>
+	<div class="container-fluid styleContainerLayout noMarginPaddingVertical" >
 		@Html.Hidden("HiddenIsSmallScreen", false)
         @Html.Partial("Transverse")
         @RenderBody()
